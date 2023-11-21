@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		@vite(['resources/scss/app.scss'])
-		<title>@yield('content')</title>
+		<title>@yield('title')</title>
 	</head>
 	<body>
 		<div class="header">
@@ -370,6 +370,20 @@
 					</ul>
           
 				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="copyright">© 2016-2023 Головне управління Держпродспоживслужби в Кіровоградській області.
+Усі права на матеріали, що розміщено на даному сайті, охороняються відповідно до чинного законодавства України. При будь-якому використанні матеріалів сайту, гіперпосилання на сайт обов'язкове.</div>
+<ul class="social">
+	<li class="social__item"><img src="images/Exclude.png" alt=""></li>
+	<li class="social__item"><img src="images/facebook.png" alt=""></li>
+</ul>	
+<div class="develop">Розробка сайту:<br/>
+<a href="https://doroshenko.agency">Doroshenko agency</a>
+</div>
 			</div>
 		</div>
     
