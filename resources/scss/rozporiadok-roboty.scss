@@ -1,0 +1,14 @@
+.breadcrumb {
+  display: flex;
+  list-style-type: none;
+}
+
+.breadcrumb__item+.breadcrumb__item::before {
+  content: '>';
+  margin: 20px;
+}
+
+td {
+  padding-right: 60px;
+  font-size: 20px;
+}
