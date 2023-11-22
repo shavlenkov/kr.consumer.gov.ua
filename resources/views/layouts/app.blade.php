@@ -58,8 +58,8 @@
 								<li><a href="http://kr.consumer.gov.ua/doc/kadri/struktura.pdf">Структура</a></li>
 								<li><a href="{{ route('rozporiadok-roboty') }}">Розпорядок роботи</a></li>
 								<li><a href="{{ route('profspilka') }}">Профспілкова організація</a></li>
-								<li><a href="#">Кадрова політика</a></li>
-								<li><a href="#">Очищення влади</a></li>
+								<li><a href="{{ route('kadri') }}">Кадрова політика</a></li>
+								<li><a href="{{ route('ochyshchennia-vlady') }}">Очищення влади</a></li>
 								<li><a href="#">Державні установи (лабораторії, лікарні) ветеринарної медицини</a></li>
 								<li><a href="http://vetlabkr.pp.ua/">Кіровоградська регіональна державна лабораторія ветеринарної медицини</a></li>
 							</ul>
@@ -136,235 +136,235 @@
 			<div class="container">
 				<h2 class="map__title">Мапа порталу</h2>
 				<div class="map__inner">
-					<ul class="items">
-						<li class="items__item"><a href="#">Про управління</a></li>
-						<li class="items__item"><a href="#">Про Головне управління</a></li>
-						<li class="items__item"><a href="#">Структура</a></li>
-						<li class="items__item"><a href="#">Розпорядок роботи</a></li>
-						<li class="items__item">
+					<ul class="map__items">
+						<li class="map__item"><a href="#">Про управління</a></li>
+						<li class="map__item"><a href="#">Про Головне управління</a></li>
+						<li class="map__item"><a href="#">Структура</a></li>
+						<li class="map__item"><a href="#">Розпорядок роботи</a></li>
+						<li class="map__item">
 							<a href="#">Профспілкова організація</a>
-							<ul class="subitems">
-								<li class="subitems__item"><a href="#">Колективний договір</a></li>
-								<li class="subitems__item"><a href="#">Бланк заяви для вступу</a></li>
+							<ul class="map__subitems">
+								<li class="map__subitem"><a href="#">Колективний договір</a></li>
+								<li class="map__subitem"><a href="#">Бланк заяви для вступу</a></li>
 							</ul>
 						</li>
-						<li class="items__item">
+						<li class="map__item">
 							<a href="#">Кадрова політика</a>
-							<ul class="subitems">
-								<li class="subitems__item"><a href="#">Вакансії</a></li>
-								<li class="subitems__item"><a href="#">Конкурс - вакансії</a></li>
-								<li class="subitems__item"><a href="#">Зразки документів</a></li>
-								<li class="subitems__item"><a href="#">Інформація про втрачені посвідчення</a></li>
-								<li class="subitems__item"><a href="#">Результати конкурсів</a></li>
+							<ul class="map__subitems">
+								<li class="map__subitem"><a href="#">Вакансії</a></li>
+								<li class="map__subitem"><a href="#">Конкурс - вакансії</a></li>
+								<li class="map__subitem"><a href="#">Зразки документів</a></li>
+								<li class="map__subitem"><a href="#">Інформація про втрачені посвідчення</a></li>
+								<li class="map__subitem"><a href="#">Результати конкурсів</a></li>
 							</ul>
 						</li>
-						<li class="items__item"><a href="#">Очищення влади</a></li>
-						<li class="items__item">
+						<li class="map__item"><a href="#">Очищення влади</a></li>
+						<li class="map__item">
 							<a href="#">Державні установи (лабораторії, лікарні) ветеринарної медицини</a>
-							<ul class="subitems">
-								<li class="subitems__item"><a href="#">Ціни</a></li>
+							<ul class="map__subitems">
+								<li class="map__subitem"><a href="#">Ціни</a></li>
 							</ul>
 						</li>
 					</ul>
-					<ul class="items">
-						<li class="items__item"><a href="#">Діяльність</a></li>
-						<li class="items__item">
+					<ul class="map__items">
+						<li class="map__item"><a href="#">Діяльність</a></li>
+						<li class="map__item">
 							<a href="#">Суб'єктам господарювання</a>
-							<ul class="subitems">
-								<li class="subitems__item"><a href="#">Декларації малих виробництв виноробної продукції</a></li>
+							<ul class="map__subitems">
+								<li class="map__subitem"><a href="#">Декларації малих виробництв виноробної продукції</a></li>
 							</ul>
 						</li>
-						<li class="items__item">
+						<li class="map__item">
 							<a href="#">Внутрішній аудит</a>
-							<ul class="subitems">
-								<li class="subitems__item">
+							<ul class="map__subitems">
+								<li class="map__subitem">
 									<a href="#">Планування діяльності</a>
-									<ul class="subitems">
-										<li class="subitems__item"><a href="#">Оперативний план діяльності Держпродспоживслужби з внутрішнього аудиту на 2020 рік</a></li>
-										<li class="subitems__item"><a href="#">Стратегічний план діяльності Держпродспоживслужби з внутрішнього аудиту на 2019 - 2021 роки (із змінами)</a></li>
-										<li class="subitems__item"><a href="#">План діяльності з внутрішнього аудиту в Держпродспоживслужби та її територіальних органах на ІІ півріччя 2018 року</a></li>
+									<ul class="map__subitems">
+										<li class="map__subitem"><a href="#">Оперативний план діяльності Держпродспоживслужби з внутрішнього аудиту на 2020 рік</a></li>
+										<li class="map__subitem"><a href="#">Стратегічний план діяльності Держпродспоживслужби з внутрішнього аудиту на 2019 - 2021 роки (із змінами)</a></li>
+										<li class="map__subitem"><a href="#">План діяльності з внутрішнього аудиту в Держпродспоживслужби та її територіальних органах на ІІ півріччя 2018 року</a></li>
 									</ul>
 								</li>
-								<li class="subitems__item">
+								<li class="map__item">
 									<a href="#">Основні напрямки діяльності</a>
-									<ul class="subitems">
-										<li class="subitems__item"><a href="#">Декларація внутрішнього аудиту</a></li>
+									<ul class="map__subitems">
+										<li class="map__subitem"><a href="#">Декларація внутрішнього аудиту</a></li>
 									</ul>
 								</li>
-								<li class="subitems__item"><a href="#">Перелік нормативно-правових актів</a></li>
+								<li class="map__subitem"><a href="#">Перелік нормативно-правових актів</a></li>
 							</ul>
 						</li>
-						<li class="items__item"><a href="#">Оцінювання службової діяльності посадових осіб</a></li>
-						<li class="items__item"><a href="#">Закупівлі</a></li>
-						<li class="items__item"><a href="#">Плани та звіти про виконання</a></li>
-						<li class="items__item"><a href="#">Система енергетичного менеджменту</a></li>
+						<li class="map__item"><a href="#">Оцінювання службової діяльності посадових осіб</a></li>
+						<li class="map__item"><a href="#">Закупівлі</a></li>
+						<li class="map__item"><a href="#">Плани та звіти про виконання</a></li>
+						<li class="map__item"><a href="#">Система енергетичного менеджменту</a></li>
 					</ul>
-					<ul class="items">
-						<li class="items__item"><a href="#">Напрямки</a></li>
-						<li class="items__item">
+					<ul class="map__items">
+						<li class="map__item"><a href="#">Напрямки</a></li>
+						<li class="map__item">
 							<a href="#">Контроль за цінами</a>
-							<ul class="subitems">
-								<li class="subitems__item"><a href="#">В умовах воєнного стану</a></li>
-								<li class="subitems__item"><a href="#">Заходи щодо стабілізації цін (COVID-19)</a></li>
-								<li class="subitems__item"><a href="#">Основні напрямки діяльністі</a></li>
-								<li class="subitems__item"><a href="#">Державний контроль за регульованими цінами</a></li>
-								<li class="subitems__item"><a href="#">Актуальна інформація</a></li>
+							<ul class="map__subitems">
+								<li class="map__subitem"><a href="#">В умовах воєнного стану</a></li>
+								<li class="map__subitem"><a href="#">Заходи щодо стабілізації цін (COVID-19)</a></li>
+								<li class="map__subitem"><a href="#">Основні напрямки діяльністі</a></li>
+								<li class="map__subitem"><a href="#">Державний контроль за регульованими цінами</a></li>
+								<li class="map__subitem"><a href="#">Актуальна інформація</a></li>
 							</ul>
 						</li>
-						<li class="items__item">
+						<li class="map__item">
 							<a href="#">Фітосанітарна безпека, насінництво та розсадництво</a>
-							<ul class="subitems">
-								<li class="subitems__item"><a href="#">Основні напрямки діяльності</a></li>
-								<li class="subitems__item"><a href="#">Пам'ятки</a></li>
-								<li class="subitems__item"><a href="#">Перелік нормативно-правових актів</a></li>
-								<li class="subitems__item">
+							<ul class="map__subitems">
+								<li class="map__subitem"><a href="#">Основні напрямки діяльності</a></li>
+								<li class="map__subitem"><a href="#">Пам'ятки</a></li>
+								<li class="map__subitem"><a href="#">Перелік нормативно-правових актів</a></li>
+								<li class="map__subitem">
 									<a href="#">Довідники</a>
-									<ul class="subitems">
-										<li class="subitems__item"><a href="#">Наказ перелік регульованих шкідливих організмів</a></li>
-										<li class="subitems__item"><a href="#">Переліки шкідливих організмів А1 та А2 ЄОКЗР</a></li>
+									<ul class="map__subitems">
+										<li class="map__subitem"><a href="#">Наказ перелік регульованих шкідливих організмів</a></li>
+										<li class="map__subitem"><a href="#">Переліки шкідливих організмів А1 та А2 ЄОКЗР</a></li>
 									</ul>
 								</li>
-								<li class="subitems__item"><a href="#">Фітосанітарний моніторинг і прогноз</a></li>
-								<li class="subitems__item"><a href="#">Фітосанітарні вимоги країн імпортерів</a></li>
-								<li class="subitems__item"><a href="#">Адміністративні послуги</a></li>
-								<li class="subitems__item"><a href="#">Перелік тестових питань та варіанти відповідей для проходження тестування осіб, діяльність яких пов’язана з транспортуванням, зберіганням, застосуванням, торгівлею пестицидами</a></li>
-								<li class="subitems__item"><a href="#">Фітосанітарний стан області</a></li>
-								<li class="subitems__item"><a href="#">Розпорядження про запровадження або скасування карантинного режиму, у тому числі переліку територій, на яких запроваджено карантинний режим</a></li>
-								<li class="subitems__item">
+								<li class="map__subitem"><a href="#">Фітосанітарний моніторинг і прогноз</a></li>
+								<li class="map__subitem"><a href="#">Фітосанітарні вимоги країн імпортерів</a></li>
+								<li class="map__subitem"><a href="#">Адміністративні послуги</a></li>
+								<li class="map__subitem"><a href="#">Перелік тестових питань та варіанти відповідей для проходження тестування осіб, діяльність яких пов’язана з транспортуванням, зберіганням, застосуванням, торгівлею пестицидами</a></li>
+								<li class="map__subitem"><a href="#">Фітосанітарний стан області</a></li>
+								<li class="map__subitem"><a href="#">Розпорядження про запровадження або скасування карантинного режиму, у тому числі переліку територій, на яких запроваджено карантинний режим</a></li>
+								<li class="map__subitem">
 									<a href="#">Бланки фітосанітарних документів та заяв</a>
-									<ul class="subitems">
-										<li class="subitems__item"><a href="#">Заява на оформлення фітосанітарного сертифіката, фітосанітарного сертифіката на реекспорт, карантинного сертифіката</a></li>
-										<li class="subitems__item"><a href="#">Заява на обстеження КНР</a></li>
-										<li class="subitems__item"><a href="#">Фітосанітарний сертифікат</a></li>
-										<li class="subitems__item"><a href="#">Заява про встановлення статусу вільних ділянок</a></li>
-										<li class="subitems__item"><a href="#">Карантинний сертифікат</a></li>
-										<li class="subitems__item"><a href="#">Заява про проведення перевірки та реєстрацію особи</a></li>
-										<li class="subitems__item"><a href="#">Заява на проведення фітосанітарних процедур</a></li>
+									<ul class="map__subitems">
+										<li class="map__subitem"><a href="#">Заява на оформлення фітосанітарного сертифіката, фітосанітарного сертифіката на реекспорт, карантинного сертифіката</a></li>
+										<li class="map__subitem"><a href="#">Заява на обстеження КНР</a></li>
+										<li class="map__subitem"><a href="#">Фітосанітарний сертифікат</a></li>
+										<li class="map__subitem"><a href="#">Заява про встановлення статусу вільних ділянок</a></li>
+										<li class="map__subitem"><a href="#">Карантинний сертифікат</a></li>
+										<li class="map__subitem"><a href="#">Заява про проведення перевірки та реєстрацію особи</a></li>
+										<li class="map__subitem"><a href="#">Заява на проведення фітосанітарних процедур</a></li>
 									</ul>
 								</li>
-								<li class="subitems__item"><a href="#">Рекомендації щодо торгівлі насінням</a></li>
-								<li class="subitems__item"><a href="#">Перелік лабораторій з визначення посівних якостей насіння</a></li>
+								<li class="map__subitem"><a href="#">Рекомендації щодо торгівлі насінням</a></li>
+								<li class="map__subitem"><a href="#">Перелік лабораторій з визначення посівних якостей насіння</a></li>
 							</ul>
 						</li>
-						<li class="items__item">
+						<li class="map__item">
 							<a href="#">Харчові продукти та ветеринарна медицина</a>
-							<ul class="subitems">
-								<li class="subitems__item"><a href="#">Основні напрямки діяльності</a></li>
-								<li class="subitems__item"><a href="#">Перелік нормативно-правових актів</a></li>
-								<li class="subitems__item"><a href="#">Пам'ятки</a></li>
-								<li class="subitems__item">
+							<ul class="map__subitems">
+								<li class="map__subitem"><a href="#">Основні напрямки діяльності</a></li>
+								<li class="map__subitem"><a href="#">Перелік нормативно-правових актів</a></li>
+								<li class="map__subitem"><a href="#">Пам'ятки</a></li>
+								<li class="map__subitem">
 									<a href="#">Реєстри</a>
-									<ul class="subitems">
-										<li class="subitems__item"><a href="#">Заява про державну реєстрацію потужності з додатком</a></li>
+									<ul class="map__subitems">
+										<li class="map__subitem"><a href="#">Заява про державну реєстрацію потужності з додатком</a></li>
 									</ul>
 								</li>
-								<li class="subitems__item"><a href="#">Звіти</a></li>
-								<li class="subitems__item"><a href="#">Повідомлення</a></li>
-								<li class="subitems__item"><a href="#">Адміністративні послуги</a></li>
-								<li class="subitems__item"><a href="#">Повідомлення системи швидкого оповіщення щодо харчових продуктів та кормів RASFF</a></li>
+								<li class="map__subitem"><a href="#">Звіти</a></li>
+								<li class="map__subitem"><a href="#">Повідомлення</a></li>
+								<li class="map__subitem"><a href="#">Адміністративні послуги</a></li>
+								<li class="map__subitem"><a href="#">Повідомлення системи швидкого оповіщення щодо харчових продуктів та кормів RASFF</a></li>
 							</ul>
 						</li>
-						<li class="items__item">
+						<li class="map__item">
 							<a href="#">Санітарно-епідеміологічний нагляд</a>
-							<ul class="subitems">
-								<li class="subitems__item"><a href="#">Основні напрямки діяльності</a></li>
-								<li class="subitems__item"><a href="#">Державний нагляд (контроль)</a></li>
-								<li class="subitems__item"><a href="#">Перелік нормативно-правових актів</a></li>
-								<li class="subitems__item"><a href="#">Адміністративні послуги</a></li>
-								<li class="subitems__item"><a href="#">Матеріали семінарів</a></li>
-								<li class="subitems__item"><a href="#">Пам'ятки</a></li>
-								<li class="subitems__item"><a href="#">Актуальна інформація щодо проведення державної санітарно-епідеміологічної експертизи</a></li>
+							<ul class="map__subitems">
+								<li class="map__subitem"><a href="#">Основні напрямки діяльності</a></li>
+								<li class="map__subitem"><a href="#">Державний нагляд (контроль)</a></li>
+								<li class="map__subitem"><a href="#">Перелік нормативно-правових актів</a></li>
+								<li class="map__subitem"><a href="#">Адміністративні послуги</a></li>
+								<li class="map__subitem"><a href="#">Матеріали семінарів</a></li>
+								<li class="map__subitem"><a href="#">Пам'ятки</a></li>
+								<li class="map__subitem"><a href="#">Актуальна інформація щодо проведення державної санітарно-епідеміологічної експертизи</a></li>
 							</ul>
 						</li>
-						<li class="items__item">
+						<li class="map__item">
 							<a href="#">Захист прав споживачів</a>
-							<ul class="subitems">
-								<li class="subitems__item"><a href="#">Анонси</a></li>
-								<li class="subitems__item"><a href="#">Консультаційний центр</a></li>
-								<li class="subitems__item"><a href="#">Основні напрямки діяльності</a></li>
-								<li class="subitems__item"><a href="#">Державний нагляд (контроль)</a></li>
-								<li class="subitems__item"><a href="#">Перелік нормативно-правових актів</a></li>
-								<li class="subitems__item"><a href="#">Бланки заяв</a></li>
-								<li class="subitems__item"><a href="#">Судова практика</a></li>
-								<li class="subitems__item">
+							<ul class="map__subitems">
+								<li class="map__subitem"><a href="#">Анонси</a></li>
+								<li class="map__subitem"><a href="#">Консультаційний центр</a></li>
+								<li class="map__subitem"><a href="#">Основні напрямки діяльності</a></li>
+								<li class="map__subitem"><a href="#">Державний нагляд (контроль)</a></li>
+								<li class="map__subitem"><a href="#">Перелік нормативно-правових актів</a></li>
+								<li class="map__subitem"><a href="#">Бланки заяв</a></li>
+								<li class="map__subitem"><a href="#">Судова практика</a></li>
+								<li class="map__subitem">
 									<a href="#">Ринковий нагляд</a>
-									<ul class="subitems">
-										<li class="subitems__item"><a href="#">Щодо здійснення державного ринкового нагляду</a></li>
-										<li class="subitems__item"><a href="#">Перелік нормативно-правових актів</a></li>
-										<li class="subitems__item"><a href="#">Пам'ятки</a></li>
-										<li class="subitems__item"><a href="#">Технічний регламент</a></li>
+									<ul class="map__subitems">
+										<li class="map__subitem"><a href="#">Щодо здійснення державного ринкового нагляду</a></li>
+										<li class="map__subitem"><a href="#">Перелік нормативно-правових актів</a></li>
+										<li class="map__subitem"><a href="#">Пам'ятки</a></li>
+										<li class="map__subitem"><a href="#">Технічний регламент</a></li>
 									</ul>
 								</li>
-								<li class="subitems__item"><a href="#">Метрологічний нагляд</a></li>
-								<li class="subitems__item"><a href="#">Презентаційний звіт управління захисту споживачів</a></li>
+								<li class="map__subitem"><a href="#">Метрологічний нагляд</a></li>
+								<li class="map__subitem"><a href="#">Презентаційний звіт управління захисту споживачів</a></li>
 							</ul>
 						</li>
-						<li class="items__item">
+						<li class="map__item">
 							<a href="#">Реєстрація сільськогосподарської техніки</a>
-							<ul class="subitems">
-								<li class="subitems__item"><a href="#">Перелік нормативно-правових актів</a></li>
-								<li class="subitems__item"><a href="#">Прийом документів</a></li>
-								<li class="subitems__item"><a href="#">Новини</a></li>
+							<ul class="map__subitems">
+								<li class="map__subitem"><a href="#">Перелік нормативно-правових актів</a></li>
+								<li class="map__subitem"><a href="#">Прийом документів</a></li>
+								<li class="map__subitem"><a href="#">Новини</a></li>
 							</ul>
 						</li>
 					</ul>
-					<ul class="items">
-						<li class="items__item"><a href="#">Про управління</a></li>
-						<li class="items__item"><a href="#">Про Головне управління</a></li>
-						<li class="items__item"><a href="#">Структура</a></li>
-						<li class="items__item"><a href="#">Розпорядок роботи</a></li>
-						<li class="items__item">
+					<ul class="map__items">
+						<li class="map__item"><a href="#">Про управління</a></li>
+						<li class="map__item"><a href="#">Про Головне управління</a></li>
+						<li class="map__item"><a href="#">Структура</a></li>
+						<li class="map__item"><a href="#">Розпорядок роботи</a></li>
+						<li class="map__item">
 							<a href="#">Профспілкова організація</a>
 							<ul class="subitems">
-								<li class="subitems__item"><a href="#">Колективний договір</a></li>
-								<li class="subitems__item"><a href="#">Бланк заяви для вступу</a></li>
+								<li class="map__subitem"><a href="#">Колективний договір</a></li>
+								<li class="map__subitem"><a href="#">Бланк заяви для вступу</a></li>
 							</ul>
 						</li>
-						<li class="items__item">
+						<li class="map__item">
 							<a href="#">Кадрова політика</a>
 							<ul class="subitems">
-								<li class="subitems__item"><a href="#">Вакансії</a></li>
-								<li class="subitems__item"><a href="#">Конкурс - вакансії</a></li>
-								<li class="subitems__item"><a href="#">Зразки документів</a></li>
-								<li class="subitems__item"><a href="#">Інформація про втрачені посвідчення</a></li>
-								<li class="subitems__item"><a href="#">Результати конкурсів</a></li>
+								<li class="map__subitem"><a href="#">Вакансії</a></li>
+								<li class="map__subitem"><a href="#">Конкурс - вакансії</a></li>
+								<li class="map__subitem"><a href="#">Зразки документів</a></li>
+								<li class="map__subitem"><a href="#">Інформація про втрачені посвідчення</a></li>
+								<li class="map__subitem"><a href="#">Результати конкурсів</a></li>
 							</ul>
 						</li>
-						<li class="items__item"><a href="#">Очищення влади</a></li>
-						<li class="items__item">
+						<li class="map__item"><a href="#">Очищення влади</a></li>
+						<li class="map__item">
 							<a href="#">Державні установи (лабораторії, лікарні) ветеринарної медицини</a>
-							<ul class="subitems">
-								<li class="subitems__item"><a href="#">Ціни</a></li>
+							<ul class="map__subitems">
+								<li class="map__subitem"><a href="#">Ціни</a></li>
 							</ul>
 						</li>
 					</ul>
-          <ul class="items">
-						<li class="items__item"><a href="#">Про управління</a></li>
-						<li class="items__item"><a href="#">Про Головне управління</a></li>
-						<li class="items__item"><a href="#">Структура</a></li>
-						<li class="items__item"><a href="#">Розпорядок роботи</a></li>
-						<li class="items__item">
+          <ul class="map__items">
+						<li class="map__item"><a href="#">Про управління</a></li>
+						<li class="map__item"><a href="#">Про Головне управління</a></li>
+						<li class="map__item"><a href="#">Структура</a></li>
+						<li class="map__item"><a href="#">Розпорядок роботи</a></li>
+						<li class="map__item">
 							<a href="#">Профспілкова організація</a>
-							<ul class="subitems">
-								<li class="subitems__item"><a href="#">Колективний договір</a></li>
-								<li class="subitems__item"><a href="#">Бланк заяви для вступу</a></li>
+							<ul class="map__subitems">
+								<li class="map__subitem"><a href="#">Колективний договір</a></li>
+								<li class="map__subitem"><a href="#">Бланк заяви для вступу</a></li>
 							</ul>
 						</li>
-						<li class="items__item">
+						<li class="map__item">
 							<a href="#">Кадрова політика</a>
 							<ul class="subitems">
-								<li class="subitems__item"><a href="#">Вакансії</a></li>
-								<li class="subitems__item"><a href="#">Конкурс - вакансії</a></li>
-								<li class="subitems__item"><a href="#">Зразки документів</a></li>
-								<li class="subitems__item"><a href="#">Інформація про втрачені посвідчення</a></li>
-								<li class="subitems__item"><a href="#">Результати конкурсів</a></li>
+								<li class="map__subitem"><a href="#">Вакансії</a></li>
+								<li class="map__subitem"><a href="#">Конкурс - вакансії</a></li>
+								<li class="map__subitem"><a href="#">Зразки документів</a></li>
+								<li class="map__subitem"><a href="#">Інформація про втрачені посвідчення</a></li>
+								<li class="map__subitem"><a href="#">Результати конкурсів</a></li>
 							</ul>
 						</li>
-						<li class="items__item"><a href="#">Очищення влади</a></li>
-						<li class="items__item">
+						<li class="map__item"><a href="#">Очищення влади</a></li>
+						<li class="map__item">
 							<a href="#">Державні установи (лабораторії, лікарні) ветеринарної медицини</a>
-							<ul class="subitems">
-								<li class="subitems__item"><a href="#">Ціни</a></li>
+							<ul class="map__subitems">
+								<li class="map__subitem"><a href="#">Ціни</a></li>
 							</ul>
 						</li>
 					</ul>

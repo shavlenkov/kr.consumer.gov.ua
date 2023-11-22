@@ -24,3 +24,11 @@ Route::get('/rozporiadok-roboty', function () {
 Route::get('/profspilka', function () {
     return view('profspilka');
 })->name('profspilka');
+
+Route::get('/kadri', function () {
+    return view('kadri');
+})->name('kadri');
+
+Route::get('/ochyshchennia-vlady', function () {
+    return view('ochyshchennia-vlady');
+})->name('ochyshchennia-vlady');

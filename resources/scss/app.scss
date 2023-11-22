@@ -142,6 +142,57 @@ body {
   display: block;
 }
 
+
+
+
+.map__inner {
+  display: grid;
+    grid-template-columns: repeat(3, 1fr); // Создаем колонки с равным размером
+}
+
+.map__items {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.map__subitems {
+  border-left: 2px solid #2d5ca6;
+  list-style-type: none;
+}
+
+.map__item a,
+.map__subitem a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #2d5ca6;
+}
+
+.map__item,
+.map__subitem {
+  margin-bottom: 10px;
+}
+
+.map__subitems {
+  padding-top: 10px;
+}
+
+.list__items {
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.list__item {
+  margin-bottom: 30px;
+}
+
+.list__item a,
+.list__subitem a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #2d5ca6;
+}
+
 .search {
   display: flex;
   color: #fff;
