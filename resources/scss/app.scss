@@ -231,3 +231,45 @@ body {
   font-weight: 400;
   line-height: 24px;
 }
+
+
+.modal {
+  width: 311px;
+  height: 369px;
+  position: relative;
+}
+
+.modal ul {
+  list-style-type: none;
+  position: absolute;
+  top: 15%;
+  left: 18%;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal ul li  {
+  font-size: 20px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  
+}
+
+.modal ul li a{
+border-bottom: 2px solid transparent;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.modal ul li:hover {
+  font-weight: 600;
+  color:#FFE358;
+  
+}
+
+.modal ul li:hover a {
+  border-bottom-color: #FFE358;
+    color: #FFE358;
+    transition: border-bottom-color 0.5s;
+}

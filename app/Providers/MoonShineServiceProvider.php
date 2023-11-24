@@ -13,6 +13,7 @@ use MoonShine\Resources\MoonShineUserRoleResource;
 use App\MoonShine\Resources\UserResource;
 use App\MoonShine\Resources\PostResource;
 use App\MoonShine\Resources\CategoryResource;
+use App\MoonShine\Resources\BannerResource;
 
 class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
 {
@@ -38,6 +39,11 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
             MenuItem::make(
                 static fn() => 'Користувачі',
                 new UserResource()
+            ),
+
+             MenuItem::make(
+                'Банери',
+                new BannerResource()
             ),
         ];
     }

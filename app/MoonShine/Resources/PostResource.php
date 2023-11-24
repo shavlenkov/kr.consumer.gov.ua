@@ -9,11 +9,13 @@ use App\Models\Post;
 use App\Models\Category;
 use MoonShine\Fields\Text;
 use MoonShine\Fields\Select;
+use MoonShine\Fields\Switcher;
 
 
 use MoonShine\Resources\ModelResource;
 use MoonShine\Decorations\Block;
 use MoonShine\Fields\ID;
+use MoonShine\Fields\Image;
 use MoonShine\Enums\ClickAction;
 
 
@@ -43,8 +45,13 @@ class PostResource extends ModelResource
                 ID::make()->sortable(),
                 Text::make('Title', 'title'),
                 Text::make('Descr', 'descr'),
-                 Select::make('Category', 'category_id')
-                    ->options($a)
+                Select::make('Category', 'category_id')
+                    ->options($a),
+                Switcher::make('Опубликовать', 'active'),
+                Image::make('Image', 'image_url')
+            ->dir('/') // Директория где будут хранится файлы в storage (по умолчанию /)
+            ->disk('public') // Filesystems disk
+            ->allowedExtensions(['jpg', 'gif', 'png'])
             ]),
         ];
     }

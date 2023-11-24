@@ -5,12 +5,23 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		@vite(['resources/scss/app.scss'])
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 		<title>@yield('title')</title>
 	</head>
 	<body>
+		<div style="border-radius: 0;  background-color: #1B3764;" id="ex1" class="modal">
+       <ul style="text-align: center">
+				<li><a href="#">Президент України</a></li>
+				<li><a href="#">Верховна Рада</a></li>
+				<li><a href="#">Урядовий портал</a></li>
+				<li><a href="#">Конституційний суд України</a></li>
+				<li><a href="#">Рада національної безпеки <br/> і оборони Україниіння</a></li>
+			 </ul>
+     </div>
 		<div class="header">
 			<div class="container">
 				<div class="header__inner">
+						<a style="text-decoration: none;" href="#ex1" rel="modal:open">
 					<div class="logo">
 						<div class="logo__prapor">
 							<div class="logo__prapor-blue"></div>
@@ -21,6 +32,7 @@
 							<div class="logo__text-title">Державні сайти України</div>
 						</div>
 					</div>
+						</a>
 
 					<div class="main" style="width: 100px">
 						<img style="margin: 0 auto" src="images/герб.png" alt="" />
@@ -116,18 +128,13 @@
 					<h2 class="links__title">Посилання</h2>
 
 					<div class="links__list">
-						<div class="link">
-							<img src="images/img3.png" alt="" />
-						</div>
-						<div class="link">
-							<img src="images/img4.png" alt="" />
-						</div>
-						<div class="link">
-							<img src="images/img5.png" alt="" />
-						</div>
-						<div class="link">
-							<img src="images/img6.png" alt="" />
-						</div>
+
+						@foreach(App\Models\Banner::all() as $banner)
+						  <div class="link">
+							   <a target="{{ str_contains(config('app.url'), $banner->url) ? '_self' : '_new' }}" href="{{ $banner->url }}"><img width="255" height="200" src="{{ asset('/storage/'.$banner->image_url) }}" alt="" /></a>
+						  </div>
+						@endforeach
+
 					</div>
 				</div>
 			</div>
@@ -386,6 +393,9 @@
 </div>
 			</div>
 		</div>
-    
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 	</body>
 </html>
