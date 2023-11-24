@@ -10,9 +10,11 @@ use App\Models\Category;
 use MoonShine\Fields\Text;
 use MoonShine\Fields\Select;
 
+
 use MoonShine\Resources\ModelResource;
 use MoonShine\Decorations\Block;
 use MoonShine\Fields\ID;
+use MoonShine\Enums\ClickAction;
 
 
 class PostResource extends ModelResource
@@ -20,6 +22,8 @@ class PostResource extends ModelResource
     protected string $model = Post::class;
 
     protected string $title = 'Posts';
+
+    protected ?ClickAction $clickAction = ClickAction::DETAIL;
 
     public function fields(): array
     {
