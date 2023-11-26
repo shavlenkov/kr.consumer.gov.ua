@@ -120,7 +120,41 @@ body {
   height: 204px;
   padding: 0;
   padding-top: 40px;
+  z-index: 2;
 }
+
+
+.search__block {
+  display: none;
+  position: absolute;
+  background-color: #244a85;
+  left: 0;
+  width: 100%;
+  height: 204px;
+  padding: 0;
+  padding-top: 40px;
+  z-index: 2;
+}
+
+.search__block-title, .search__block-form {
+  margin-left: 50px;
+}
+
+.search__block-input {
+  width: 50%;
+  height: 40px;
+  background: rgba(0.0, 0.0, 0.0, 0.0);
+  color: #fff;
+  font-size: 24px;
+}
+
+.search__block-btn {
+  background: #FFE358;
+  height: 50px;
+  width: 110px;
+}
+
+
 
 .submenu li {
   display: block;
@@ -202,6 +236,20 @@ body {
 
 .search__text {
   margin-left: 20px;
+}
+
+.search__text {
+  display: inline-block;
+}
+
+.search__text:hover .search__block {
+  display: block;
+}
+
+
+
+.search__text:hover {
+  background: #244a85;
 }
 
 .footer {

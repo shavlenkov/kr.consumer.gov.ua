@@ -7,6 +7,7 @@
 		@vite(['resources/scss/app.scss'])
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 		<title>@yield('title')</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	</head>
 	<body>
 		<div style="border-radius: 0;  background-color: #1B3764;" id="ex1" class="modal">
@@ -105,7 +106,15 @@
 					</ul>
 					<div class="search">
 						<i class="fa-solid fa-magnifying-glass"></i>
-						<p class="search__text">Пошук</p>
+						<div class="search__text"><p>Пошук</p></p>
+						<div class="search__block">
+							<h5 class="search__block-title">Пошук на порталі</h5>
+							<form class="search__block-form" action="">
+							<input class="search__block-input" type="text">
+							<button class="search__block-btn"><b>Знайти</b></button>
+							</form>
+							
+						</div>
 					</div>
 				</div>
 			</div>
@@ -120,10 +129,6 @@
     <div class="links">
 			<div class="container">
 				<div class="links__inner">
-					<div class="btns">
-						<i class="fa-solid fa-arrow-left"></i>
-						<i class="fa-solid fa-arrow-right"></i>
-					</div>
 
 					<h2 class="links__title">Посилання</h2>
 
@@ -141,9 +146,9 @@
 		</div>
     <div class="map">
 			<div class="container">
-				<h2 class="map__title">Мапа порталу</h2>
-				<div class="map__inner">
-					<ul class="map__items">
+				<h2 class="map__title">Мапа порталу <span id="btn"><i class="fa-solid fa-arrow-down"></i></span></h2>
+				<div class="map__inner" id="m">
+					<ul class="map__items"> 
 						<li class="map__item"><a href="#">Про управління</a></li>
 						<li class="map__item"><a href="#">Про Головне управління</a></li>
 						<li class="map__item"><a href="#">Структура</a></li>
@@ -394,8 +399,11 @@
 			</div>
 		</div>
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		
 
 <!-- jQuery Modal -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+@vite(['resources/js/app.js'])
 	</body>
 </html>
