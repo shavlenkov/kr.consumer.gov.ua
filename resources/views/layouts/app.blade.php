@@ -64,7 +64,7 @@
 			<div class="container">
 				<div class="nav__inner">
 					<ul class="menu">
-						<li class="menu__li">
+						{{-- <li class="menu__li">
 							<a class="menu__link" href="#">Про управління</a>
 							<ul class="submenu">
 								<li><a href="http://kr.consumer.gov.ua/doc/struktura/polozhennya.pdf">Про Головне управління</a></li>
@@ -76,19 +76,18 @@
 								<li><a href="#">Державні установи (лабораторії, лікарні) ветеринарної медицини</a></li>
 								<li><a href="http://vetlabkr.pp.ua/">Кіровоградська регіональна державна лабораторія ветеринарної медицини</a></li>
 							</ul>
-						</li>
+						</li> --}}
+						@foreach(App\Models\Menu::where('parent_id', null)->get() as $item )
 						<li class="menu__li">
-							<a class="menu__link" href="#">Діяльність</a>
+							<a class="menu__link" href="#">{{ $item->name }}</a>
 							<ul class="submenu">
-								<li><a href="#">Суб'єктам господарювання</a></li>
-								<li><a href="#">Внутрішній аудит</a></li>
-								<li><a href="#">Оцінювання службової діяльності посадових осіб</a></li>
-								<li><a href="#">Закупівлі</a></li>
-								<li><a href="#">Плани та звіти про виконання</a></li>
-								<li><a href="#">Система енергетичного менеджменту</a></li>
+								@foreach($item->submenus as $subitem)
+								<li><a href="#">{{ $subitem->name }}</a></li>
+								@endforeach
 							</ul>
 						</li>
-						<li class="menu__li">
+						@endforeach
+						{{-- <li class="menu__li">
 							<a class="menu__link" href="#">Напрямки</a>
 							<ul class="submenu">
 								<li><a href="#">Контроль за цінами</a></li>
@@ -102,7 +101,7 @@
 						<li class="menu__li"><a class="menu__link" href="#">Публічна інформація</a></li>
 						<li class="menu__li"><a class="menu__link" href="#">Зв'язки з громадкістю</a></li>
 						<li class="menu__li"><a class="menu__link" href="#">Стоп корупція</a></li>
-						<li class="menu__li"><a class="menu__link" href="#">У воєнний час</a></li>
+						<li class="menu__li"><a class="menu__link" href="#">У воєнний час</a></li> --}}
 					</ul>
 					<div class="search">
 						<i class="fa-solid fa-magnifying-glass"></i>

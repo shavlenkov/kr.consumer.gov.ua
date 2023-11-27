@@ -14,6 +14,7 @@ use App\MoonShine\Resources\UserResource;
 use App\MoonShine\Resources\PostResource;
 use App\MoonShine\Resources\CategoryResource;
 use App\MoonShine\Resources\BannerResource;
+use App\MoonShine\Resources\PrimaryMenuResource;
 
 class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
 {
@@ -31,9 +32,13 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
     {
         return [
 
-            MenuGroup::make('Матеріали', [
-                MenuItem::make(static fn() => 'Posts', new PostResource()),
-                MenuItem::make(static fn() => 'Category', new CategoryResource()),
+            MenuGroup::make('Каталог', [
+                MenuItem::make(static fn() => 'Матеріали', new PostResource()),
+                MenuItem::make(static fn() => 'Категорії', new CategoryResource()),
+            ])->translatable(),
+
+            MenuGroup::make('Меню', [
+                MenuItem::make(static fn() => 'Головне меню', new PrimaryMenuResource()),
             ])->translatable(),
 
             MenuItem::make(
