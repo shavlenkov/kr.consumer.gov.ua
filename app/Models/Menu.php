@@ -15,18 +15,14 @@ class Menu extends Model
 
      protected $fillable = [
         'title',
-        'parent_id'
     ];
 
     public function submenus()
     {
-        return $this->hasMany(Menu::class, 'parent_id');
+        return $this->hasMany(Submenu::class, 'parent_id');
     }
 
-    public function menu()
-{
-    return $this->belongsTo(Menu::class, 'parent_id');
-}
+   
 
 
 

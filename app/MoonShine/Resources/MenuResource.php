@@ -12,7 +12,7 @@ use MoonShine\Decorations\Block;
 use MoonShine\Fields\ID;
 use MoonShine\Fields\Text;
 
-class PrimaryMenuResource extends ModelResource
+class MenuResource extends ModelResource
 {
     protected string $model = Menu::class;
 

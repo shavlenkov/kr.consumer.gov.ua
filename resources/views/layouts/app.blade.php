@@ -77,12 +77,12 @@
 								<li><a href="http://vetlabkr.pp.ua/">Кіровоградська регіональна державна лабораторія ветеринарної медицини</a></li>
 							</ul>
 						</li> --}}
-						@foreach(App\Models\Menu::where('parent_id', null)->get() as $item )
+						@foreach(App\Models\Menu::all() as $item)
 						<li class="menu__li">
 							<a class="menu__link" href="#">{{ $item->name }}</a>
 							<ul class="submenu">
 								@foreach($item->submenus as $subitem)
-								<li><a href="#">{{ $subitem->name }}</a></li>
+								<li><a href="{{ $subitem->url }}">{{ $subitem->name }}</a></li>
 								@endforeach
 							</ul>
 						</li>

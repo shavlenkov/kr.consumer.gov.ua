@@ -6,6 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 use App\Models\Menu;
+use App\Models\Submenu;
 
 class MenuSeeder extends Seeder
 {
@@ -66,15 +67,16 @@ class MenuSeeder extends Seeder
 
     $parentMenuItem = Menu::create([
         'name' => $parentTitle,
-        'parent_id' => null,
     ]);
 
-   
     foreach ($subMenu as $childTitle) {
-        Menu::create([
+        
+        Submenu::create([
             'name' => $childTitle,
             'parent_id' => $parentMenuItem->id,
         ]);
+
+       
     }
 }
 
