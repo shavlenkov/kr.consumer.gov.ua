@@ -84,6 +84,12 @@ body {
   margin-right: 40px;
 }
 
+.content__inner {
+  margin-left: 60px;
+  word-wrap: break-word;
+  margin-right: 60px;
+}
+
 .noeye__text {
   margin-left: 20px;
 }
@@ -102,6 +108,7 @@ body {
   padding: 15px 20px;
   text-decoration: none;
   color: #fff;
+  font-size: 20px;
 }
 
 
@@ -176,7 +183,9 @@ body {
   display: block;
 }
 
-
+.map {
+  margin-left: 120px;
+}
 
 
 .map__inner {

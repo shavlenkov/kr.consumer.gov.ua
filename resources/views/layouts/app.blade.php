@@ -36,7 +36,7 @@
 						</a>
 
 					<div class="main" style="width: 100px">
-						<img style="margin: 0 auto" src="images/герб.png" alt="" />
+						<img style="margin: 0 auto" src="{{ asset('images/герб.png') }}" alt="" />
 					</div>
 					<div class="noeye">
 						<i class="fa-sharp fa-solid fa-eye-slash"></i>

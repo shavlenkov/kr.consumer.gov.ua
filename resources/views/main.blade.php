@@ -13,7 +13,7 @@
 							@foreach(App\Models\Post::events()->get() as $event)
 							<div class="event">
 								<img width="350" height="220" src="{{ asset('/storage/'.$event->image_url) }}" alt="" />
-								<p style="font-size: 18px; color: #2d5ca6">{{ $event->title }}</p>
+								<a href="{{ route('post', $event->id) }}" style="font-size: 18px; color: #2d5ca6; text-decoration: none;">{{ $event->title }}</a>
 								<p style="font-size: 16px; color: #6d727c">{{ Carbon\Carbon::parse($event->created_at)->isoFormat('D MMMM YYYY', 'en') }}</p>
 							</div>
 							@endforeach

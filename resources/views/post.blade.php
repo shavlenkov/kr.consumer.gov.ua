@@ -10,7 +10,7 @@
       <h2 class="post__inner-title">{{ $post->title }}</h2>
       <p>{{ Carbon\Carbon::parse($post->created_at)->isoFormat('D MMMM YYYY', 'en') }}</p>
 
-      {{!! $post->long_description !!}
+      {!! $post->long_description !!}
 
     </div>
   </div>
