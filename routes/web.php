@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('main');
 })->name('main');
 
+Route::get('/posts/{id}', function($id) {
+    return view('post')->with('post', App\Models\Post::find($id));
+})->name('post');
+
 Route::get('/rozporiadok-roboty', function () {
     return view('rozporiadok-roboty');
 })->name('rozporiadok-roboty');

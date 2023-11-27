@@ -14,11 +14,15 @@ return new class extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('descr');
+            $table->text('short_description');
+            $table->text('long_description');
             $table->bigInteger('category_id')->unsigned()->nullable();
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade')->onUpdate('cascade');
             $table->string('image_url');
             $table->boolean('active');
+            $table->string('seo_title');
+            $table->text('seo_descr');
+            $table->string('seo_tags');
             $table->timestamps();
         });
     }

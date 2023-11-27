@@ -13,9 +13,13 @@ class Post extends Model
 
      protected $fillable = [
         'title',
-        'descr',
+        'short_description',
+        'long_description',
         'image_url',
-        'active'
+        'active',
+        'seo_title',
+        'seo_descr',
+        'seo_tags'
     ];
     
     public function category()

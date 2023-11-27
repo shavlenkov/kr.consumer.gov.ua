@@ -32,7 +32,7 @@
 								<p style="font-size: 16px; color: #6d727c">12 липня 2023</p>
 							</div>
 							@endforeach
-                           </div>
+              </div>
 
 						</div>
 					</div>
@@ -40,7 +40,7 @@
 						<h2 class="announcements__title">Анонси</h2>
 						@foreach(App\Models\Post::announcements()->get() as $announcement)
 						<div class="announcement">
-							<p style="font-size: 18px; color: #2d5ca6">{{ $announcement->title }}</p>
+							<a href="{{ route('post', $announcement->id) }}" style="font-size: 18px; color: #2d5ca6; text-decoration: none;">{{ $announcement->title }}</a>
 							<p style="font-size: 16px; color: #6d727c">{{ Carbon\Carbon::parse($announcement->created_at)->isoFormat('D MMMM YYYY', 'en') }}</p>
 						</div>
 						@endforeach
