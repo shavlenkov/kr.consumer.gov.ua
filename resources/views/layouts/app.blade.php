@@ -82,7 +82,7 @@
 							<a class="menu__link" href="#">{{ $item->name }}</a>
 							<ul class="submenu">
 								@foreach($item->submenus as $subitem)
-								<li><a href="{{ $subitem->url }}">{{ $subitem->name }}</a></li>
+								<li class="submenu__li"><a class="submenu__link" href="{{ $subitem->url }}">{{ $subitem->name }}</a></li>
 								@endforeach
 							</ul>
 						</li>

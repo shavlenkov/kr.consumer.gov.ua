@@ -108,7 +108,7 @@ body {
   padding: 15px 20px;
   text-decoration: none;
   color: #fff;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 
@@ -163,15 +163,18 @@ body {
 
 
 
-.submenu li {
+.submenu__li {
   display: block;
   width: 250px;
   margin-bottom: 50px;
 }
 
-.submenu li a {
+
+.submenu__link {
   padding: 10px;
   color: #fff;
+  font-size: 19px;
+
 }
 
 .intro__inner {
@@ -245,6 +248,7 @@ body {
 
 .search__text {
   margin-left: 20px;
+  font-size: 20px;
 }
 
 .search__text {
