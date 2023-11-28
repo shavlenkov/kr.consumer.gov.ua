@@ -1,0 +1,80 @@
+.blocks {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.slider-prev {
+  z-index: 20;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  font-size: 30px;
+}
+
+.slider-next {
+  z-index: 20;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  font-size: 30px;
+}
+
+.events {
+  width: 350px;
+}
+
+.events__title {
+  font-size: 28px;
+}
+
+.event {
+  width: 350px;
+}
+
+.event__inner {
+  position: relative;
+}
+
+.videostories {
+  margin-top: 60px;
+  width: 350px;
+}
+
+.videostories__inner {
+  position: relative;
+}
+
+.videostories__title {
+  font-size: 28px;
+}
+
+.btns {
+  float: right;
+}
+
+.announcements {
+  width: 350px;
+}
+
+.announcement {
+  margin-bottom: 40px;
+}
+
+.news {
+  width: 350px;
+}
+
+.links {
+  margin-left: 120px;
+}
+
+.links__list {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.link {
+  margin-left: 50px;
+}
