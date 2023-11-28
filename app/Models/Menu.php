@@ -14,7 +14,8 @@ class Menu extends Model
     use HasFactory;
 
      protected $fillable = [
-        'title',
+        'name',
+        'active'
     ];
 
     public function submenus()

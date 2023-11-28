@@ -5,26 +5,25 @@ declare(strict_types=1);
 namespace App\MoonShine\Resources;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Page;
 use App\Models\Submenu;
-use App\Models\Menu;
 
 use MoonShine\Resources\ModelResource;
 use MoonShine\Decorations\Block;
 use MoonShine\Fields\ID;
 use MoonShine\Fields\Text;
 use MoonShine\Fields\Select;
-use MoonShine\Fields\Switcher;
 
-class SubmenuResource extends ModelResource
+class PageResource extends ModelResource
 {
-    protected string $model = Submenu::class;
+    protected string $model = Page::class;
 
-    protected string $title = 'Second Menu';
+    protected string $title = 'Pages';
 
     public function fields(): array
     {
 
-         $categories = Menu::select(['id', 'name'])->get();
+  $categories = Submenu::select(['id', 'name'])->get();
 
     $a = [];
 
@@ -36,8 +35,8 @@ class SubmenuResource extends ModelResource
             Block::make([
                 ID::make()->sortable(),
                 Text::make('Name', 'name'),
-                Switcher::make('Опубликовать', 'active'),
-                Select::make('Menu', 'parent_id')
+                Text::make('URL', 'url'),
+                Select::make('Submenu', 'parent_id')
                     ->options($a),
             ]),
         ];

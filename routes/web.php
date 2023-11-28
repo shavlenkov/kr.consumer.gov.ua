@@ -21,6 +21,10 @@ Route::get('/posts/{id}', function($id) {
     return view('post')->with('post', App\Models\Post::find($id));
 })->name('post');
 
+Route::get('/generate/{id}', function($id) {
+    return view('generate')->with('submenu', App\Models\Submenu::find($id));
+})->name('generate');
+
 Route::get('/rozporiadok-roboty', function () {
     return view('rozporiadok-roboty');
 })->name('rozporiadok-roboty');

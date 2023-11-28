@@ -77,12 +77,12 @@
 								<li><a href="http://vetlabkr.pp.ua/">Кіровоградська регіональна державна лабораторія ветеринарної медицини</a></li>
 							</ul>
 						</li> --}}
-						@foreach(App\Models\Menu::all() as $item)
+						@foreach(App\Models\Menu::where('active', 1)->get() as $item)
 						<li class="menu__li">
 							<a class="menu__link" href="#">{{ $item->name }}</a>
 							<ul class="submenu">
-								@foreach($item->submenus as $subitem)
-								<li class="submenu__li"><a class="submenu__link" href="{{ $subitem->url }}">{{ $subitem->name }}</a></li>
+								@foreach($item->submenus->where('active', 1) as $subitem)
+								<li class="submenu__li"><a class="submenu__link" href="{{ count($subitem->pages) != 0 ? route('generate', $subitem->id) : $subitem->url }}">{{ $subitem->name }}</a></li>
 								@endforeach
 							</ul>
 						</li>

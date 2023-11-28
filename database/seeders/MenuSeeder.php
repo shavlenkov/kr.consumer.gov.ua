@@ -7,6 +7,7 @@ use Illuminate\Database\Seeder;
 
 use App\Models\Menu;
 use App\Models\Submenu;
+use App\Models\Page;
 
 class MenuSeeder extends Seeder
 {
@@ -17,8 +18,13 @@ class MenuSeeder extends Seeder
     {
         $menu = [
             'Про управління' => [
-                'Про Головне управління',
-                'Структура',
+                'Про Головне управління' => ['url' => 'http://google.com/fdfsdfsdfsd'],
+                'Структура' => [
+                    'pages' => [
+                        'fdfdsf' => ['url' => 'http://a.com'],
+                        'dsfdsfds' =>['url' => 'http://b.com'],
+                    ]
+                ],
                 'Розпорядок роботи',
                 'Профспілкова організація',
                 'Кадрова політика',
@@ -70,16 +76,44 @@ class MenuSeeder extends Seeder
         'name' => $parentTitle,
     ]);
 
-    foreach ($subMenu as $childTitle) {
-        
-        Submenu::create([
-            'name' => $childTitle,
+    foreach ($subMenu as $childTitle => $childData) {
+
+        if(is_numeric($childTitle)) {
+           Submenu::create([
+            'name' => $childData,
+            'url' => null,
             'parent_id' => $parentMenuItem->id,
         ]);
+        } else {
+            if(isset($childData['url'])) {
+           Submenu::create([
+            'name' => $childTitle,
+            'url' => $childData['url'],
+            'parent_id' => $parentMenuItem->id,
+           ]);
+           } else if(isset($childData['pages'])) {
+           $b = Submenu::create([
+            'name' => $childTitle,
+            'url' => null,
+            'parent_id' => $parentMenuItem->id,
+           ]);
 
-       
-    }
+           foreach($childData['pages'] as $childTitle2 => $childData2) {
+             Page::create([
+                'name' => $childTitle2,
+                'parent_id' => $b->id,
+                'url' => $childData2['url']
+             ]);
+           }
+
+        
+           }
+        }
+
+
+      }
 }
 
-    }
+        }
+
 }

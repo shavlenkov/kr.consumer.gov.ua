@@ -11,6 +11,7 @@ use MoonShine\Resources\ModelResource;
 use MoonShine\Decorations\Block;
 use MoonShine\Fields\ID;
 use MoonShine\Fields\Text;
+use MoonShine\Fields\Switcher;
 
 class MenuResource extends ModelResource
 {
@@ -23,7 +24,8 @@ class MenuResource extends ModelResource
         return [
             Block::make([
                 ID::make()->sortable(),
-                Text::make('Name', 'name')
+                Text::make('Name', 'name'),
+                Switcher::make('Опубликовать', 'active'),
             ]),
         ];
     }

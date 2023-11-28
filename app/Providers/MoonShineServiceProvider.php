@@ -16,6 +16,8 @@ use App\MoonShine\Resources\CategoryResource;
 use App\MoonShine\Resources\BannerResource;
 use App\MoonShine\Resources\MenuResource;
 use App\MoonShine\Resources\SubmenuResource;
+use App\MoonShine\Resources\PageResource;
+
 
 class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
 {
@@ -41,6 +43,7 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
             MenuGroup::make('Меню', [
                 MenuItem::make(static fn() => 'Головне меню', new MenuResource()),
                 MenuItem::make(static fn() => 'Підменю', new SubmenuResource()),
+                MenuItem::make(static fn() => 'Сторінки', new PageResource()),
             ])->translatable(),
 
             MenuItem::make(
